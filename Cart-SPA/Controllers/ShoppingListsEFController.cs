@@ -26,7 +26,11 @@ namespace CartSPA.Controllers
         [ResponseType(typeof(ShoppingList))]
         public IHttpActionResult GetShoppingList(int id)
         {
-            ShoppingList shoppingList = db.ShoppingLists.Find(id);
+            ShoppingList shoppingList = db.ShoppingLists
+                .Where(s => s.Id == id)
+                .Include(s => s.Items)
+                .FirstOrDefault();
+
             if (shoppingList == null)
             {
                 return NotFound();
