@@ -81,10 +81,13 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
